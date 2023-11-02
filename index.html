@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Deluxx Store</title>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="assets/logotipo.png" alt="" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Bienvenue</a></li>
+                <li><a href="homme.html">Homme</a></li>
+                <li><a href="femme.html">Femme</a></li>
+                <li><a href="about.html">La Grecco</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="hamb__cart"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="main__pic">
+        <h1>GRECCO Luxury Collection - Since 1932</h1>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide"><img src="Assets/Produtos/terno1.jpg" alt="1"> </div>
+            <div class="swiper-slide"><img src="Assets/Produtos/terno2.jpg" alt="2"></div>
+            <div class="swiper-slide"><img src="Assets/Produtos/terno3.jpg" alt="3"></div>
+            <div class="swiper-slide"><img src="Assets/Produtos/terno4.jpg" alt="4"></div>
+            <div class="swiper-slide"><img src="Assets/Produtos/terno5.jpg" alt="5"></div>
+            <div class="swiper-slide"><img src="Assets/Produtos/terno6.jpg" alt="6"></div>
+            <div class="swiper-slide"><img src="Assets/Produtos/terno7.jpg" alt="7"></div>
+            <div class="swiper-slide"><img src="Assets/Produtos/terno8.jpg" alt="8"></div>
+        </div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    </section>
+
+    <section id="main__femme">
+        <h2>GRECCO par Femme - Verano 2023</h2>
+        <button><a href="femme.html">Saiba Mais</button>
+    </section>
+
+    <div id="blog__txt">
+        <h2>Blog</h2>
+    </div>
+
+    <section id="featured">
+        <div class="feat__img">
+            <img src="Assets/banners/pe2.jpg" alt="">
+        </div>
+        <div class="feat__text">
+            <h2>Como se veste a mulher de sucesso?</h2>
+            <p>Veja como a estilista Jacquéline Dubois inovou mesclando o street e o office.</p>
+            <button>Ler artigo</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Assets/logotipo.png" alt="logotipo">
+            <h4>Contato</h4>
+            <p><strong>Enderço:</strong> Rua da Camiseta bem Passada, 1234</p>
+            <p><strong>Phone:</strong> +55 (21) 99999-9999</p>
+            <p><strong>Horário:</strong> Seg. a Sex. das 9h às 18h</p>
+            <div class="follow">
+                <h4>Siga-nos</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre</a>
+            <a href="#">Info. de Frete</a>
+            <a href="#">Olítica de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Fale Conosco</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha Conta</h4>
+            <a href="#">Cadastrar</a>
+            <a href="#">Ver Carrinho</a>
+            <a href="#">Minha Wishlist</a>
+            <a href="#">Seguir meu pedido</a>
+            <a href="#">Ajuda</a>
+        </div>
+
+        <div class="col install">
+            <h4>Baixe nosso app</h4>
+            <p>Pela Apple Store ou Google Play</p>
+            <div class="row">
+                <img src="assets/pay/app.jpg" alt="">
+                <img src="assets/pay/play.jpg" alt="">
+            </div>
+            <p>Meios de pagamento seguros</p>
+            <img src="assets/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>©2023 PassionTech Ltda - HTML, CSS, Javascript</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 5,
+            slidesPerView: 3,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

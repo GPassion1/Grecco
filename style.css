@@ -1,0 +1,467 @@
+@import url(homme.css);
+@import url(femme.css);
+@import url(about.css);
+
+:root{
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Luxurious Script', cursive;
+    --preto: #000000;
+    --cinza: #282A3A;
+    --ouro-velho: #735F32;
+    --ouro: #C69749;
+    --off-white: #FFFBF5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--off-white);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.section__p1{
+    padding: 2.5em 5em;
+}
+
+.section__m1{
+    margin: 2.5em 0;
+}
+
+/* Propriedades de Header e Navbar */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625em 3.75em;
+    background-color: var(--preto);
+    box-shadow: 0 5px 15px rgba(173, 173, 173, 0.3);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 1.25em;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--off-white);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: var(--ouro);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: var(--ouro);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+/* Terminam Aqui */
+
+/* Primeira Imagem */
+#main__pic{
+    background-image: url(Assets/banners/rapazpretoebranco.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 90%;
+    padding: 5em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main__pic h1{
+    color: var(--off-white);
+    font-size: 2rem;
+}
+
+/* #main__pic button{
+    background-image: url();
+    background-color: transparent;
+    color: var(--off-white);
+    border: 0;
+    padding: 0.875em 5em 0.875em 4.0625em;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1rem;
+} */
+
+/* Carrossel */
+.carrossel{
+    padding-bottom: 8em;
+    padding-top: 2.5em;
+    padding-left: 1em;
+}
+
+.carrossel__titulo{
+    color: var(--preto);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    font-weight: 500;
+    padding: 1em 0 2.5em 0;
+}
+
+.swiper-slide img {
+    width: 50vh;
+    height: 70vh;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+/* Fin du Swiper */
+
+/* Segundo Banner */
+#main__femme{
+    background-image: url(Assets/banners/meninadepreto.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main__femme h2{
+    color: var(--off-white);
+    font-size: 32px;
+}
+
+#main__femme button{
+    background-image: url();
+    background-color: transparent;
+    color: var(--off-white);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#main__femme button a{
+    text-decoration: none;
+    color: var(--off-white);
+}
+/* Fin du Femme Frame */
+
+/* Blog */
+#blog__txt h2{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 5em;
+}
+
+#featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: center;
+}
+
+#featured .feat__img{
+    margin: 50px;
+    position: relative;
+}
+
+#featured .feat__img img{
+    width: 50em;
+    height: 60em;
+}
+
+#featured .feat__text{
+    padding-bottom: 35px;
+}
+
+#featured .feat__text h2{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#featured .feat__text p{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#featured .feat__text button{
+    background-color: var(--preto);
+    color: var(--off-white);
+    border: 0;
+    padding: 15px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--preto);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    color: var(--off-white);
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    color: var(--off-white);
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--off-white);
+    margin: 0 0 8px 0;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: var(--off-white);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid var(--off-white);
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 10px 10px;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: var(--ouro);
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para dispositivos móveis */
+
+/* Define uma largura máxima para a página, para que o conteúdo não fique muito largo em telas pequenas */
+@media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Ajusta o tamanho da fonte principal para dispositivos móveis */
+    }
+  
+    .section__p1 {
+      padding: 1em; /* Reduz o preenchimento para se ajustar melhor às telas menores */
+    }
+  
+    /* Adapta os estilos do cabeçalho e da barra de navegação para telas pequenas */
+    #header {
+      padding: 0.625em; /* Reduz o preenchimento do cabeçalho */
+    }
+  
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background-color: var(--off-white);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.10);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 35px;
+    }
+
+    #navbar li a{
+        color: var(--preto);
+    }
+  
+    #mobile {
+      display: flex;
+      align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+  
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #hamb__cart{
+        display: none;
+    }
+  
+    /* Adapta o estilo da primeira imagem para dispositivos móveis */
+    #main__pic {
+      padding: 2em;
+      background-position: top 30% right 60%;
+    }
+  
+    #main__pic h1 {
+      font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    /* Adapta os estilos do carrossel para dispositivos móveis */
+    .carrossel {
+      padding: 2em; /* Reduz o preenchimento para telas menores */
+    }
+  
+    .swiper-slide img {
+      width: 100%; /* Faz as imagens do carrossel ocuparem toda a largura da tela */
+      height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    }
+  
+    /* Adapta o estilo do segundo banner para dispositivos móveis */
+    #main__femme {
+      padding: 1em;
+      background-position: top 30% right 30%;
+    }
+  
+    #main__femme h2 {
+      font-size: 1.25rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+
+    #featured{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5vh;
+    }
+  
+    /* Adapta o estilo do blog para dispositivos móveis */
+    #blog__txt h2 {
+
+      font-size: 1.25rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #featured .feat__img img {
+      width: 100%; /* Faz as imagens ocuparem toda a largura da tela */
+      height: auto; /* Ajusta a altura automaticamente */
+    }
+  
+    #featured .feat__text h2 {
+      font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #featured .feat__text p {
+      font-size: 1rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #featured .feat__text button {
+      padding: 0.25em 0.5em; /* Ajusta o tamanho do botão para telas pequenas */
+    }
+  
+    /* Adapta o estilo do rodapé para dispositivos móveis */
+    footer {
+      flex-direction: column; /* Empilha os elementos em colunas */
+    }
+  
+    footer .col {
+      margin: 0;
+    }
+  
+    footer h4,
+    footer p,
+    footer a {
+      font-size: 1rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    footer .follow i {
+      padding-right: 2px; /* Reduz o espaçamento entre o ícone e o texto */
+    }
+  }
+  

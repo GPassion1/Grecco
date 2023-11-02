@@ -1,0 +1,156 @@
+#about__main__pic{
+    background-image: url(Assets/banners/LaGrecco1932.png);
+    height: 100vh;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top  right 60%;
+    padding: 5em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+#shop__main__pic h2{
+    color: var(--off-white);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Produtos */
+
+#product1 {
+    text-align: center;
+    padding: 2em;
+}
+
+#product1 h2{
+    font-size: 3rem;
+    padding: 0.2em;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.25em;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid var(--off-white);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: left;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ouro-velho);
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #f6f5e8;
+    font-weight: 500;
+    color: Var(--ouro-velho);
+    border: 1px solid #e7e3cc;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* Estilos para dispositivos móveis */
+
+/* Define uma largura máxima para a página, para que o conteúdo não fique muito largo em telas pequenas */
+@media (max-width: 768px) {
+    #shop__main__pic {
+      padding: 3em; /* Reduz o preenchimento para se ajustar melhor às telas menores */
+      align-items: center; /* Centraliza o conteúdo verticalmente */
+      background-position: center; /* Centraliza a imagem de fundo */
+    }
+  
+    #shop__main__pic h2 {
+      font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #product1 h2 {
+      font-size: 2rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #product1 .pro-container {
+      justify-content: center; /* Centraliza os produtos horizontalmente */
+    }
+  
+    #product1 .pro {
+      width: 90%; /* Faz com que os produtos ocupem a maior parte da largura disponível */
+      min-width: initial; /* Remove a largura mínima */
+      margin: 15px 0;
+    }
+  
+    #product1 .pro img {
+      border-radius: 10px; /* Reduz o raio da borda para ficar mais suave */
+    }
+  
+    #product1 .pro .des {
+      text-align: center; /* Centraliza o texto descritivo */
+    }
+  
+    #product1 .pro .des span {
+      font-size: 12px; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #product1 .pro .des h5 {
+      font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #product1 .pro .des h4 {
+      font-size: 1rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+  
+    #product1 .pro .cart {
+      width: 30px; /* Reduz o tamanho do ícone do carrinho */
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px; /* Ajusta o tamanho da fonte para telas pequenas */
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+  
