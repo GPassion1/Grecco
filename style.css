@@ -249,6 +249,142 @@ body{
     font-weight: 700;
     font-size: 18px;
 }
+/* Fim do Blog */
+
+/* Newsletter */
+
+#newsletter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    background-image: url(Assets/logotipodark.png);
+    background-repeat: repeat;
+    background-position: 60% 60%;
+    background-color: var(--cinza);
+    background-blend-mode: darken;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ouro);
+    padding: 0.5em;
+    padding-right: 1em;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    padding: 0.5em;
+    padding-right: 1em;
+}
+
+#newsletter p span{
+    color: var(--ouro);
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.input-group{
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.input{
+    flex: 1 0 140px;
+    all: unset;
+    color: var(--ouro);
+    padding: 1rem;
+    border: 1px solid var(--ouro);
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--ouro);
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.input:focus{
+    border: 1px solid var(--ouro);
+}
+
+.input:is(:focus, :valid) ~ .label {
+    transform:
+        translateY(-120%)
+        scale(0.7);
+    background-color: var(--cinza);
+    padding-inline: 0.3rem;
+    color: var(--ouro);
+}
+
+.input-group__email{
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.input__email{
+    flex: 1 0 140px;
+    all: unset;
+    color: var(--ouro);
+    padding: 1rem;
+    border: 1px solid var(--ouro);
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label__email{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--ouro);
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.input__email:focus{
+    border: 1px solid var(--ouro);
+}
+
+.input__email:is(:focus, :valid) ~ .label__email {
+    transform:
+        translateY(-120%)
+        scale(0.7);
+    background-color: var(--cinza);
+    padding-inline: 0.3rem;
+    color: var(--ouro);
+}
+
+#newsletter button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: var(--ouro);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid;
+    outline: none;
+    transition: 0.2s;
+}
+
+#newsletter button:hover{
+    color: var(--cinza);
+    background-color: var(--ouro);
+}
+
 
 /* Footer */
 footer{
@@ -447,7 +583,13 @@ footer .copyright{
     #featured .feat__text button {
       padding: 0.25em 0.5em; /* Ajusta o tamanho do botão para telas pequenas */
     }
-  
+    
+    .formulario{
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+    }
+
     /* Adapta o estilo do rodapé para dispositivos móveis */
     footer {
       flex-direction: column; /* Empilha os elementos em colunas */
