@@ -537,6 +537,7 @@ footer .copyright{
   
     /* Adapta o estilo da primeira imagem para dispositivos móveis */
     #main__pic {
+      width: 100%;  
       padding: 2em;
       background-position: top 30% right 60%;
     }
