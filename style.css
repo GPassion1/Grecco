@@ -150,6 +150,10 @@ body{
     height: 70vh;
 }
 
+.carrossel .swiper-scrollbar{
+    gap: 20px;
+}
+
 .swiper-button-prev, .swiper-button-next {
     display: none;
 }
@@ -250,6 +254,15 @@ body{
     font-size: 18px;
 }
 /* Fim do Blog */
+
+/* Videoplayer */
+#video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 7em;
+}
 
 /* Newsletter */
 

@@ -61,6 +61,8 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
     </div>
     </section>
 
@@ -82,6 +84,11 @@
             <p>Veja como a estilista Jacquéline Dubois inovou mesclando o street e o office.</p>
             <button>Ler artigo</button>
         </div>
+    </section>
+
+    <section id="video">
+        <h2>Veja nosso último desfile:</h2>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ILdOQVfsDhY?si=kmJME6952lhfxAUJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
 
     <section id="newsletter">
@@ -159,11 +166,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
+            loop: true,
             spaceBetween: 5,
             slidesPerView: 3,
             scrollbar: {
                 el: '.swiper-scrollbar',
                 draggable: true,
+                hide: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
             },
         });
     </script>
